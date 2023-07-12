@@ -1,0 +1,16 @@
+img {
+  max-width: 100%;
+}
+
+.mini-logo {
+  width: 42px;
+}
+
+.ul-header {
+  list-style: none;
+}
+
+.dropdown-menu[data-bs-popper] {
+  left: auto;
+  right: 0;
+}
