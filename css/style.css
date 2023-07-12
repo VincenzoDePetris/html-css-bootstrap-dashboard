@@ -18,11 +18,12 @@ img {
 /* SIDE BAR */
 
 .side-bar {
+  height: calc(100vh - 58px);
   padding: 0 7px;
   position: relative;
   color: whitesmoke;
   width: 60px;
-  height: calc(100vh - 68px);
+
   background-color: black;
   background-image: url(../img/sidebar-bg.png);
 }
@@ -36,12 +37,42 @@ img {
   justify-content: center;
 }
 
+main header {
+  width: calc(100vw - 60px);
+}
+
+main div > span {
+  background-color: rgba(5, 44, 101, 0.5);
+}
+
+.no-bg {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.bedge-div {
+  max-width: 50%;
+}
+
 @media screen and (min-width: 768px) {
   .side-bar {
     width: 250px;
   }
 
+  main header {
+    width: calc(100vw - 250px);
+  }
+
   .setting {
     justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .bedge-div {
+    max-width: 30%;
+  }
+
+  main header {
+    justify-content: space-between;
   }
 }

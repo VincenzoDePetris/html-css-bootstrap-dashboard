@@ -61,7 +61,7 @@
       </nav>
     </header>
 
-    <main>
+    <main class="d-flex">
       <!-- side bar -->
       <div class="side-bar">
         <div class="py-2 px-2 fs-3 d-flex">
@@ -83,6 +83,64 @@
       </div>
       <!-- main section -->
       <div class="content-section">
+        <!-- header del content -->
+        <header class="bg-primary py-4 px-2 d-lg-flex flex-lg-row-reverse">
+          <!-- button -->
+          <div class="d-flex align-items-center py-2 fs-5">
+            <div class="text-light">Nuovo Studente</div>
+            <div>
+              <button class="btn btn-primary border m-3 btn-outline-primary text-light"
+              type="button" 
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasWithBothOptions"
+              aria-controls="offcanvasWithBothOptions">
+              +
+              </button>
+
+              <div class="offcanvas offcanvas-start" 
+                  data-bs-scroll="true" 
+                  tabindex="-1" 
+                  id="offcanvasWithBothOptions"
+                  aria-labelledby="offcanvasWithBothOptionsLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title"
+                  id="offcanvasWithBothOptionsLabel">
+                  Backdrop with scrolling
+                  </h5>
+                  <button type="button" 
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas" 
+                  aria-label="Close">
+                  </button>
+                </div>
+                <div class="offcanvas-body">
+                  <p>Try scrolling the rest of the page to see this option in action.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- span -->
+          <div class=" text-light bedge-div">
+            <span class="fs-2 no-bg">Boolean</span>
+
+            <span class="badge">Piano blaze</span>
+            <span class="badge">3 app</span>
+            <span class="no-bg">>></span>
+            <span class="d-md-none badge">+</span>
+            <span class="badge d-none d-md-inline">Boolean mobile app</span>
+            <span class="badge d-none d-md-inline">Boolean web app</span>
+            <span class="badge d-none d-md-inline">Boolean blog app</span>
+          </div>
+          <!-- counter -->
+          <div class="my-2 text-light">
+            <p class="mb-2 mt-4">Studenti online negli ultimi 30 minuti</p>
+            <p class="fs-3">125</p>
+          </div>
+        </header>
+        <!-- col section -->
+        <div></div>
+        <div></div>
+      </div>
        
     </main>
     <!-- collegamento js bootstrap -->
