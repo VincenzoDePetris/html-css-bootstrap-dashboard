@@ -14,3 +14,34 @@ img {
   left: auto;
   right: 0;
 }
+
+/* SIDE BAR */
+
+.side-bar {
+  padding: 0 7px;
+  position: relative;
+  color: whitesmoke;
+  width: 60px;
+  height: calc(100vh - 68px);
+  background-color: black;
+  background-image: url(../img/sidebar-bg.png);
+}
+
+.setting {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .side-bar {
+    width: 250px;
+  }
+
+  .setting {
+    justify-content: flex-start;
+  }
+}

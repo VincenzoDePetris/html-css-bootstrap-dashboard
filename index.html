@@ -24,20 +24,20 @@
   <body>
     <header>
       <nav class="navbar bg-light">
-        <div class="container-fluid"></div>
-        <a class="navbar-brand d-md-none mini-logo" href="#"
-          ><img src="./img/mobile-logo.png" alt="mini logo"
-        /></a>
-        <a class="navbar-brand d-none d-md-block" href="#"
-          ><img src="./img/logo.svg" alt="logo"
-        /></a>
-        <form class="d-flex flex-grow-1" role="search">
-          <input
-            class="form-control me-2"
-            type="search"
-            placeholder="Prova a cercare: lezioni di Laravel"
-            aria-label="Search"
-          />
+        <div class="container-fluid">
+          <a class="navbar-brand d-md-none mini-logo" href="#"
+            ><img src="./img/mobile-logo.png" alt="mini logo"
+          /></a>
+          <a class="navbar-brand d-none d-md-block mx-1" href="#"
+            ><img src="./img/logo.svg" alt="logo"
+          /></a>
+          <form class="d-flex flex-grow-1" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Prova a cercare: lezioni di Laravel"
+              aria-label="Search"
+            />
           <div class="d-flex align-items-center">
             <div class="mx-2 d-none d-md-block">
               <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-list-ul"></i></a>
@@ -48,7 +48,6 @@
             <div class="mx-2  d-none d-md-block">
               <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
             </div>
-            </ul>
             <a class="nav-link dropdown-toggle mx-2 text-warning" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               <i class="fa-solid fa-bell"></i>
             </a>
@@ -59,16 +58,32 @@
             </ul>
           </div>
         </div>
-          
-
       </nav>
     </header>
 
     <main>
       <!-- side bar -->
-      <div></div>
+      <div class="side-bar">
+        <div class="py-2 px-2 fs-3 d-flex">
+          <div><i class="fa-solid fa-house"></i></div>
+          <div class="d-none d-md-block mx-2">Home</div>
+        </div>
+        <div class="py-2 px-2 fs-3 d-flex">
+          <div><i class="fa-solid fa-chart-simple"></i></i></div>
+          <div class="d-none d-md-block mx-3">Stats</div>
+        </div>
+        <div class="py-2 px-2 fs-3 d-flex">
+          <div><i class="fa-solid fa-signal"></i></div>
+          <div class="d-none d-md-block mx-2">Signals</div>
+        </div>
+        <div class="py-2 px-2 fs-3 setting d-flex">
+          <div class="px-1"><i class="fa-solid fa-gear"></i></div>
+          <div class="d-none d-md-block mx-2">Admin</div>
+        </div>
+      </div>
       <!-- main section -->
-      <div></div>
+      <div class="content-section">
+       
     </main>
     <!-- collegamento js bootstrap -->
     <script
