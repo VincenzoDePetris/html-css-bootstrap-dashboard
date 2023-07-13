@@ -19,6 +19,18 @@ img {
   right: 0;
 }
 
+.item-1 {
+  order: 1;
+}
+
+.item-2 {
+  order: 3;
+}
+
+.item-3 {
+  order: 2;
+}
+
 /* SIDE BAR */
 
 .side-bar {
