@@ -31,24 +31,38 @@
           <a class="navbar-brand d-none d-md-block mx-1" href="#"
             ><img src="./img/logo.svg" alt="logo"
           /></a>
-          <form class="d-flex flex-grow-1" role="search">
+
+          <form class="d-flex flex-grow-1 mx-3" role="search">
             <input
               class="form-control me-2"
               type="search"
               placeholder="Prova a cercare: lezioni di Laravel"
               aria-label="Search"
             />
+          </form>
           <div class="d-flex align-items-center">
             <div class="mx-2 d-none d-md-block">
-              <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-list-ul"></i></a>
+              <a class="nav-link active" aria-current="page" href="#"
+                ><i class="fa-solid fa-list-ul"></i
+              ></a>
             </div>
             <div class="mx-2 d-none d-md-block">
-              <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-circle-question"></i></a>
+              <a class="nav-link active" aria-current="page" href="#"
+                ><i class="fa-solid fa-circle-question"></i
+              ></a>
             </div>
-            <div class="mx-2  d-none d-md-block">
-              <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+            <div class="mx-2 d-none d-md-block">
+              <a class="nav-link active" aria-current="page" href="#"
+                ><i class="fa-solid fa-ellipsis-vertical"></i
+              ></a>
             </div>
-            <a class="nav-link dropdown-toggle mx-2 text-warning" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a
+              class="nav-link mx-2 text-warning"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
               <i class="fa-solid fa-bell"></i>
             </a>
             <ul class="dropdown-menu">
@@ -63,22 +77,22 @@
 
     <main class="d-flex">
       <!-- side bar -->
-      <div class="side-bar">
+      <div class="side-bar d-flex flex-column">
         <div class="py-2 px-2 fs-3 d-flex">
           <div><i class="fa-solid fa-house"></i></div>
-          <div class="d-none d-md-block mx-2">Home</div>
+          <div class="d-none d-md-block px-3">Home</div>
         </div>
         <div class="py-2 px-2 fs-3 d-flex">
-          <div><i class="fa-solid fa-chart-simple"></i></i></div>
-          <div class="d-none d-md-block mx-3">Stats</div>
+          <div><i class="fa-solid fa-chart-simple px-1"></i></div>
+          <div class="d-none d-md-block px-3">Stats</div>
         </div>
         <div class="py-2 px-2 fs-3 d-flex">
           <div><i class="fa-solid fa-signal"></i></div>
-          <div class="d-none d-md-block mx-2">Signals</div>
+          <div class="d-none d-md-block px-3">Signals</div>
         </div>
         <div class="py-2 px-2 fs-3 setting d-flex">
-          <div class="px-1"><i class="fa-solid fa-gear"></i></div>
-          <div class="d-none d-md-block mx-2">Admin</div>
+          <div class="px-1"><i class="fa-solid fa-gear px-1"></i></div>
+          <div class="d-none d-md-block px-3">Admin</div>
         </div>
       </div>
       <!-- main section -->
@@ -88,39 +102,182 @@
           <!-- button -->
           <div class="d-flex align-items-center py-2 fs-5">
             <div class="text-light">Nuovo Studente</div>
+            <!-- offcanvas -->
             <div>
-              <button class="btn btn-primary border m-3 btn-outline-primary text-light"
-              type="button" 
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasWithBothOptions"
-              aria-controls="offcanvasWithBothOptions">
-              +
+              <button
+                class="btn btn-primary border m-3 btn-outline-primary text-light"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasWithBothOptions"
+                aria-controls="offcanvasWithBothOptions"
+              >
+                +
               </button>
 
-              <div class="offcanvas offcanvas-start" 
-                  data-bs-scroll="true" 
-                  tabindex="-1" 
-                  id="offcanvasWithBothOptions"
-                  aria-labelledby="offcanvasWithBothOptionsLabel">
+              <div
+                class="offcanvas offcanvas-end"
+                data-bs-scroll="true"
+                tabindex="-1"
+                id="offcanvasWithBothOptions"
+                aria-labelledby="offcanvasWithBothOptionsLabel"
+              >
                 <div class="offcanvas-header">
-                  <h5 class="offcanvas-title"
-                  id="offcanvasWithBothOptionsLabel">
-                  Backdrop with scrolling
+                  <h5
+                    class="offcanvas-title"
+                    id="offcanvasWithBothOptionsLabel"
+                  >
+                    Backdrop with scrolling
                   </h5>
-                  <button type="button" 
-                  class="btn-close"
-                  data-bs-dismiss="offcanvas" 
-                  aria-label="Close">
-                  </button>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
                 </div>
+                <!-- body offcanvas -->
                 <div class="offcanvas-body">
-                  <p>Try scrolling the rest of the page to see this option in action.</p>
+                  <div class="container-fluid">
+                    <div class="row">
+                      <!-- nome -->
+                      <div class="col-12 col-md-6">
+                        <label for="nome" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="nome" />
+                      </div>
+                      <!-- cognome -->
+                      <div class="col-12 col-md-6">
+                        <label for="cognome" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="cognome" />
+                      </div>
+                      <!-- email -->
+                      <div class="col-12 col-md-6">
+                        <label for="inputEmail4" class="form-label"
+                          >Email</label
+                        >
+                        <div class="input-group">
+                          <div class="input-group-text">@</div>
+
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="inputEmail4"
+                          />
+                        </div>
+                      </div>
+                      <!-- password -->
+                      <div class="col-12 col-md-6">
+                        <label for="inputPassword4" class="form-label"
+                          >Password</label
+                        >
+                        <input
+                          type="password"
+                          class="form-control"
+                          id="inputPassword4"
+                        />
+                      </div>
+
+                      <div class="col-12 col-md-6">
+                        <label for="inputEmail4" class="form-label"
+                          >Indirizzo Email</label
+                        >
+                        <div class="input-group">
+                          <div class="input-group-text">@</div>
+
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="inputEmail4"
+                          />
+                        </div>
+                      </div>
+                      <!-- altra password -->
+                      <div class="col-12 col-md-6">
+                        <label for="inputPassword4" class="form-label"
+                          >Password</label
+                        >
+                        <input
+                          type="password"
+                          class="form-control"
+                          id="inputPassword4"
+                        />
+                      </div>
+                      <!-- indirizzo -->
+                      <div class="col-12">
+                        <label for="inputAddress2" class="form-label"
+                          >Indirizzo</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="inputAddress2"
+                        />
+                      </div>
+                      <!-- città -->
+                      <div class="col-12 col-md-6">
+                        <label for="città" class="form-label">Città</label>
+                        <input type="text" class="form-control" id="città" />
+                      </div>
+                      <!-- stato -->
+                      <div class="col-12 col-md-4">
+                        <label for="stato" class="form-label">Stato</label>
+                        <select id="stato" class="form-select">
+                          <option selected>Scegli...</option>
+                          <option>Inghilterra</option>
+                          <option>Francia</option>
+                          <option>Spagna</option>
+                          <option>Italia</option>
+                        </select>
+                      </div>
+                      <!-- cap -->
+                      <div class="col-12 col-md-2">
+                        <label for="cap" class="form-label">Cap</label>
+                        <input type="text" class="form-control" id="cap" />
+                      </div>
+
+                      <div class="col-12">
+                        <label for="inputPassword4" class="form-label"
+                          >Foto</label
+                        >
+                        <input
+                          type="file"
+                          class="form-control"
+                          id="inputPassword4"
+                        />
+                      </div>
+                      <!-- content -->
+                      <div class="col-6 my-3">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="inlineFormCheck"
+                          />
+                          <label class="form-check-label" for="inlineFormCheck">
+                            Seleziona per proseguire
+                          </label>
+                        </div>
+                      </div>
+                      <!-- empty -->
+                      <div class="col-6 my-3"></div>
+                      <!-- content -->
+                      <div class="col-6">
+                        <button type="submit" class="btn btn-primary">
+                          Salva
+                        </button>
+                        <button type="submit" class="btn btn-warning">
+                          Svuota
+                        </button>
+                      </div>
+                      <!-- empty -->
+                      <div class="col-6"></div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <!-- span -->
-          <div class=" text-light bedge-div">
+          <div class="text-light bedge-div">
             <span class="fs-2 no-bg">Boolean</span>
 
             <span class="badge">Piano blaze</span>
@@ -141,7 +298,6 @@
         <div></div>
         <div></div>
       </div>
-       
     </main>
     <!-- collegamento js bootstrap -->
     <script

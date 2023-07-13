@@ -18,12 +18,12 @@ img {
 /* SIDE BAR */
 
 .side-bar {
-  height: calc(100vh - 58px);
+  height: calc(100vh - 70px);
   padding: 0 7px;
   position: relative;
   color: whitesmoke;
   width: 60px;
-
+  align-items: center;
   background-color: black;
   background-image: url(../img/sidebar-bg.png);
 }
@@ -53,9 +53,16 @@ main div > span {
   max-width: 50%;
 }
 
+.offcanvas.offcanvas-end {
+  width: 100%;
+  max-width: 768px;
+}
+
 @media screen and (min-width: 768px) {
   .side-bar {
+    height: calc(100vh - 58px);
     width: 250px;
+    align-items: flex-start;
   }
 
   main header {
