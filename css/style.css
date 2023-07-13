@@ -64,15 +64,23 @@ main div > span {
   margin: 0 -10px;
 }
 
+body {
+  overflow-x: hidden;
+}
+
+.col-section {
+  overflow-y: auto;
+}
+
 @media screen and (min-width: 768px) {
   .side-bar {
     height: calc(100vh - 58px);
-    width: 250px;
+    width: 200px;
     align-items: flex-start;
   }
 
   main header {
-    width: calc(100vw - 250px);
+    width: calc(100vw - 200px);
   }
 
   .setting {
