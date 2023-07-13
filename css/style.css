@@ -1,3 +1,7 @@
+main {
+  height: calc(100vh - 58px);
+}
+
 img {
   max-width: 100%;
 }
@@ -18,7 +22,7 @@ img {
 /* SIDE BAR */
 
 .side-bar {
-  height: calc(100vh - 58px);
+  height: 100%;
   padding: 0 7px;
   color: whitesmoke;
   width: 60px;
@@ -64,12 +68,13 @@ main div > span {
   margin: 0 -10px;
 }
 
-body {
+.content-section {
+  overflow-y: auto;
   overflow-x: hidden;
 }
 
-.col-section {
-  overflow-y: auto;
+.side-button:hover {
+  background-color: rgb(177, 177, 177);
 }
 
 @media screen and (min-width: 768px) {
