@@ -43,6 +43,10 @@ img {
   background-image: url(../img/sidebar-bg.png);
 }
 
+.side-bar > div {
+  width: 100%;
+}
+
 .setting {
   justify-content: center;
 }
