@@ -105,6 +105,7 @@
           <div class="d-flex align-items-center py-2 fs-5 item-1">
             <div class="text-light">Nuovo Studente</div>
             <!-- offcanvas -->
+
             <div>
               <button
                 class="btn btn-primary border m-3 text-light"
@@ -140,139 +141,173 @@
                 <!-- body offcanvas -->
                 <div class="offcanvas-body">
                   <div class="container-fluid">
-                    <div class="row">
-                      <!-- nome -->
-                      <div class="col-12 col-md-6">
-                        <label for="nome" class="form-label">Nome</label>
-                        <input type="text" class="form-control" id="nome" />
-                      </div>
-                      <!-- cognome -->
-                      <div class="col-12 col-md-6">
-                        <label for="cognome" class="form-label">Nome</label>
-                        <input type="text" class="form-control" id="cognome" />
-                      </div>
-                      <!-- email -->
-                      <div class="col-12 col-md-6">
-                        <label for="inputEmail4" class="form-label"
-                          >Email</label
-                        >
-                        <div class="input-group">
-                          <div class="input-group-text">@</div>
-
+                    <form
+                      action="http://learning.tizianonicolai.com/request-catcher/"
+                      method="get"
+                    >
+                      <div class="row">
+                        <!-- nome -->
+                        <div class="col-12 col-md-6">
+                          <label for="nome" class="form-label">Nome</label>
                           <input
-                            type="email"
+                            type="text"
+                            name="nome"
                             class="form-control"
-                            id="inputEmail4"
+                            id="nome"
                           />
                         </div>
-                      </div>
-                      <!-- password -->
-                      <div class="col-12 col-md-6">
-                        <label for="inputPassword4" class="form-label"
-                          >Password</label
-                        >
-                        <input
-                          type="password"
-                          class="form-control"
-                          id="inputPassword4"
-                        />
-                      </div>
-
-                      <div class="col-12 col-md-6">
-                        <label for="inputEmail4" class="form-label"
-                          >Indirizzo Email</label
-                        >
-                        <div class="input-group">
-                          <div class="input-group-text">@</div>
-
+                        <!-- cognome -->
+                        <div class="col-12 col-md-6">
+                          <label for="cognome" class="form-label">Nome</label>
                           <input
-                            type="email"
+                            type="text"
+                            name="cognome"
                             class="form-control"
-                            id="inputEmail4"
+                            id="cognome"
                           />
                         </div>
-                      </div>
-                      <!-- altra password -->
-                      <div class="col-12 col-md-6">
-                        <label for="inputPassword4" class="form-label"
-                          >Password</label
-                        >
-                        <input
-                          type="password"
-                          class="form-control"
-                          id="inputPassword4"
-                        />
-                      </div>
-                      <!-- indirizzo -->
-                      <div class="col-12">
-                        <label for="inputAddress2" class="form-label"
-                          >Indirizzo</label
-                        >
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="inputAddress2"
-                        />
-                      </div>
-                      <!-- città -->
-                      <div class="col-12 col-md-6">
-                        <label for="città" class="form-label">Città</label>
-                        <input type="text" class="form-control" id="città" />
-                      </div>
-                      <!-- stato -->
-                      <div class="col-12 col-md-4">
-                        <label for="stato" class="form-label">Stato</label>
-                        <select id="stato" class="form-select">
-                          <option selected>Scegli...</option>
-                          <option>Inghilterra</option>
-                          <option>Francia</option>
-                          <option>Spagna</option>
-                          <option>Italia</option>
-                        </select>
-                      </div>
-                      <!-- cap -->
-                      <div class="col-12 col-md-2">
-                        <label for="cap" class="form-label">Cap</label>
-                        <input type="text" class="form-control" id="cap" />
-                      </div>
+                        <!-- email -->
+                        <div class="col-12 col-md-6">
+                          <label for="inputEmail4" class="form-label"
+                            >Email</label
+                          >
+                          <div class="input-group">
+                            <div class="input-group-text">@</div>
 
-                      <div class="col-12">
-                        <label for="inputPassword4" class="form-label"
-                          >Foto</label
-                        >
-                        <input
-                          type="file"
-                          class="form-control"
-                          id="inputPassword4"
-                        />
-                      </div>
-                      <!-- content -->
-                      <div class="col-6 my-3">
-                        <div class="form-check">
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            id="inlineFormCheck"
-                          />
-                          <label class="form-check-label" for="inlineFormCheck">
-                            Seleziona per proseguire
-                          </label>
+                            <input
+                              type="email"
+                              class="form-control"
+                              name="inputEmail4"
+                              id="inputEmail4"
+                            />
+                          </div>
                         </div>
+                        <!-- password -->
+                        <div class="col-12 col-md-6">
+                          <label for="inputPassword4" class="form-label"
+                            >Password</label
+                          >
+                          <input
+                            type="password"
+                            name="inputPassword4"
+                            class="form-control"
+                            id="inputPassword4"
+                          />
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                          <label for="inputEmail4" class="form-label"
+                            >Indirizzo Email</label
+                          >
+                          <div class="input-group">
+                            <div class="input-group-text">@</div>
+
+                            <input
+                              type="email"
+                              name="inputEmail4"
+                              class="form-control"
+                              id="inputEmail4"
+                            />
+                          </div>
+                        </div>
+                        <!-- altra password -->
+                        <div class="col-12 col-md-6">
+                          <label for="inputPassword4" class="form-label"
+                            >Password</label
+                          >
+                          <input
+                            type="password"
+                            name="inputPassword4"
+                            class="form-control"
+                            id="inputPassword4"
+                          />
+                        </div>
+                        <!-- indirizzo -->
+                        <div class="col-12">
+                          <label for="inputAddress2" class="form-label"
+                            >Indirizzo</label
+                          >
+                          <input
+                            type="text"
+                            name="inputAddress2"
+                            class="form-control"
+                            id="inputAddress2"
+                          />
+                        </div>
+                        <!-- città -->
+                        <div class="col-12 col-md-6">
+                          <label for="città" class="form-label">Città</label>
+                          <input
+                            type="text"
+                            name="città"
+                            class="form-control"
+                            id="città"
+                          />
+                        </div>
+                        <!-- stato -->
+                        <div class="col-12 col-md-4">
+                          <label for="stato" class="form-label">Stato</label>
+                          <select id="stato" name="stato" class="form-select">
+                            <option selected>Scegli...</option>
+                            <option>Inghilterra</option>
+                            <option>Francia</option>
+                            <option>Spagna</option>
+                            <option>Italia</option>
+                          </select>
+                        </div>
+                        <!-- cap -->
+                        <div class="col-12 col-md-2">
+                          <label for="cap" class="form-label">Cap</label>
+                          <input
+                            type="text"
+                            name="cap"
+                            class="form-control"
+                            id="cap"
+                          />
+                        </div>
+
+                        <div class="col-12">
+                          <label for="inputPassword4" class="form-label"
+                            >Foto</label
+                          >
+                          <input
+                            type="file"
+                            name="inputPassword4"
+                            class="form-control"
+                            id="inputPassword4"
+                          />
+                        </div>
+                        <!-- content -->
+                        <div class="col-6 my-3">
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="inlineFormCheck"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="inlineFormCheck"
+                            >
+                              Seleziona per proseguire
+                            </label>
+                          </div>
+                        </div>
+                        <!-- empty -->
+                        <div class="col-6 my-3"></div>
+                        <!-- content -->
+                        <div class="col-6">
+                          <button type="submit" class="btn btn-primary">
+                            Salva
+                          </button>
+                          <button type="submit" class="btn btn-warning">
+                            Svuota
+                          </button>
+                        </div>
+                        <!-- empty -->
+                        <div class="col-6"></div>
                       </div>
-                      <!-- empty -->
-                      <div class="col-6 my-3"></div>
-                      <!-- content -->
-                      <div class="col-6">
-                        <button type="submit" class="btn btn-primary">
-                          Salva
-                        </button>
-                        <button type="submit" class="btn btn-warning">
-                          Svuota
-                        </button>
-                      </div>
-                      <!-- empty -->
-                      <div class="col-6"></div>
-                    </div>
+                    </form>
                   </div>
                 </div>
               </div>
@@ -712,7 +747,7 @@
               <!-- statistic section -->
               <div class="card my-4 mx-2">
                 <div class="card-body">
-                  <ul class="list-group list-group-flush">
+                  <ul class="list-group list-group-flush border rounded">
                     <li class="list-group-item">
                       <div>
                         <img src="./img/stats.jpeg" alt="stats" />
